@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral</value>
+  </resheader>
+
+  <data name="QuadrantControl_DisplayName" xml:space="preserve">
+    <value>Quadrant Control</value>
+  </data>
+  <data name="QuadrantControl_Desc" xml:space="preserve">
+    <value>Interactive four-quadrant chart with draggable arrows. Accepts and emits arrow data as JSON.</value>
+  </data>
+
+  <data name="arrowsJson_Display_Key" xml:space="preserve">
+    <value>Arrows JSON</value>
+  </data>
+  <data name="arrowsJson_Desc_Key" xml:space="preserve">
+    <value>JSON array of ArrowData objects. Bound two-way: supply initial arrows as input; read the property to get current arrow state.</value>
+  </data>
+
+  <data name="quadrantTopLeft_Display_Key" xml:space="preserve">
+    <value>Top-Left Label</value>
+  </data>
+  <data name="quadrantTopLeft_Desc_Key" xml:space="preserve">
+    <value>Label shown in the top-left quadrant.</value>
+  </data>
+
+  <data name="quadrantTopRight_Display_Key" xml:space="preserve">
+    <value>Top-Right Label</value>
+  </data>
+  <data name="quadrantTopRight_Desc_Key" xml:space="preserve">
+    <value>Label shown in the top-right quadrant.</value>
+  </data>
+
+  <data name="quadrantBottomLeft_Display_Key" xml:space="preserve">
+    <value>Bottom-Left Label</value>
+  </data>
+  <data name="quadrantBottomLeft_Desc_Key" xml:space="preserve">
+    <value>Label shown in the bottom-left quadrant.</value>
+  </data>
+
+  <data name="quadrantBottomRight_Display_Key" xml:space="preserve">
+    <value>Bottom-Right Label</value>
+  </data>
+  <data name="quadrantBottomRight_Desc_Key" xml:space="preserve">
+    <value>Label shown in the bottom-right quadrant.</value>
+  </data>
+
+  <data name="xAxisLabel_Display_Key" xml:space="preserve">
+    <value>X-Axis Label</value>
+  </data>
+  <data name="xAxisLabel_Desc_Key" xml:space="preserve">
+    <value>Optional label rendered along the bottom edge of the chart.</value>
+  </data>
+
+  <data name="yAxisLabel_Display_Key" xml:space="preserve">
+    <value>Y-Axis Label</value>
+  </data>
+  <data name="yAxisLabel_Desc_Key" xml:space="preserve">
+    <value>Optional label rendered along the left edge of the chart (rotated 90°).</value>
+  </data>
+</root>

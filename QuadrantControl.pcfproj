@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>QuadrantControl</AssemblyName>
+    <RootNamespace>QuadrantControl</RootNamespace>
+    <TargetFramework>net462</TargetFramework>
+    <OutputPath>$(MSBuildThisFileDirectory)out\vs</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- resx files are handled by pcf-scripts/webpack, not by MSBuild -->
+    <EmbeddedResource Remove="**\*.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.PowerApps.MSBuild.Pcf" Version="1.*" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,105 @@
+/* ============================================================
+   QuadrantControl — PCF styles
+   ============================================================ */
+
+.qc-root {
+    /* Fill the PCF container (sized by the Canvas App framework).
+       width/height 100% works because PCF sets an explicit px size on the container. */
+    width:          100%;
+    height:         100%;
+    font-family:    "Segoe UI", system-ui, -apple-system, sans-serif;
+    font-size:      13px;
+    box-sizing:     border-box;
+    background:     #fff;
+    border:         1px solid #c8cdd3;
+    border-radius:  4px;
+    overflow:       hidden;
+}
+
+/* ---- Toolbar ---- */
+
+.qc-toolbar {
+    display:         flex;
+    align-items:     center;
+    gap:             6px;
+    padding:         6px 10px;
+    background:      #f3f3f3;
+    border-bottom:   1px solid #d0d7de;
+    flex-shrink:     0;
+    flex-wrap:       wrap;
+}
+
+.qc-btn {
+    padding:         4px 12px;
+    border:          1px solid transparent;
+    border-radius:   3px;
+    font-size:       12px;
+    font-family:     inherit;
+    cursor:          pointer;
+    white-space:     nowrap;
+    transition:      background 0.12s, border-color 0.12s;
+}
+
+.qc-btn:focus-visible {
+    outline:         2px solid #0078d4;
+    outline-offset:  2px;
+}
+
+.qc-btn-primary {
+    background:   #0078d4;
+    color:        #fff;
+    border-color: #0078d4;
+}
+
+.qc-btn-primary:hover {
+    background:   #006cbd;
+    border-color: #006cbd;
+}
+
+.qc-btn-danger {
+    background:   #fff;
+    color:        #c42b1c;
+    border-color: #c42b1c;
+}
+
+.qc-btn-danger:hover {
+    background:   #fdf3f2;
+}
+
+.qc-btn-secondary {
+    background:   #fff;
+    color:        #323130;
+    border-color: #8a8886;
+}
+
+.qc-btn-secondary:hover {
+    background:   #f3f3f3;
+    border-color: #605e5c;
+}
+
+/* ---- Status bar ---- */
+
+.qc-status {
+    padding:       4px 12px;
+    font-size:     12px;
+    color:         #0078d4;
+    background:    #f0f6ff;
+    border-bottom: 1px solid #c7dff7;
+    flex-shrink:   0;
+}
+
+/* ---- SVG canvas ---- */
+
+.qc-svg {
+    /* Width/height are set explicitly by render() from context.mode.allocatedHeight
+       so the canvas always reflects the Canvas App's Height property immediately. */
+    display:  block;
+    overflow: hidden;
+    cursor:   default;
+}
+
+/* Prevent text selection during drag */
+.qc-svg text {
+    user-select: none;
+    -webkit-user-select: none;
+}

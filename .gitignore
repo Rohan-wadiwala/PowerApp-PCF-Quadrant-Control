@@ -1,0 +1,8 @@
+node_modules/
+out/
+obj/
+bin/
+dist/
+*.zip
+*.msapp
+.DS_Store

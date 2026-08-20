@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest>
+  <control namespace="RTK" constructor="QuadrantControl" version="1.0.0"
+    display-name-key="QuadrantControl_DisplayName"
+    description-key="QuadrantControl_Desc"
+    control-type="standard">
+
+    <!--
+      arrowsJson: Two-way bound property.
+      Input  — provide a JSON array of arrows to pre-load the control.
+      Output — the control updates this whenever arrows are added/moved/deleted.
+      Format: ArrowData[] — see index.ts for the schema.
+    -->
+    <property name="arrowsJson"
+      display-name-key="arrowsJson_Display_Key"
+      description-key="arrowsJson_Desc_Key"
+      of-type="SingleLine.Text"
+      usage="bound"
+      required="false" />
+
+    <!-- Quadrant corner labels (all optional; defaults shown in index.ts) -->
+    <property name="quadrantTopLeft"
+      display-name-key="quadrantTopLeft_Display_Key"
+      description-key="quadrantTopLeft_Desc_Key"
+      of-type="SingleLine.Text"
+      usage="input"
+      required="false" />
+
+    <property name="quadrantTopRight"
+      display-name-key="quadrantTopRight_Display_Key"
+      description-key="quadrantTopRight_Desc_Key"
+      of-type="SingleLine.Text"
+      usage="input"
+      required="false" />
+
+    <property name="quadrantBottomLeft"
+      display-name-key="quadrantBottomLeft_Display_Key"
+      description-key="quadrantBottomLeft_Desc_Key"
+      of-type="SingleLine.Text"
+      usage="input"
+      required="false" />
+
+    <property name="quadrantBottomRight"
+      display-name-key="quadrantBottomRight_Display_Key"
+      description-key="quadrantBottomRight_Desc_Key"
+      of-type="SingleLine.Text"
+      usage="input"
+      required="false" />
+
+    <!-- Optional axis labels rendered on the chart edges -->
+    <property name="xAxisLabel"
+      display-name-key="xAxisLabel_Display_Key"
+      description-key="xAxisLabel_Desc_Key"
+      of-type="SingleLine.Text"
+      usage="input"
+      required="false" />
+
+    <property name="yAxisLabel"
+      display-name-key="yAxisLabel_Display_Key"
+      description-key="yAxisLabel_Desc_Key"
+      of-type="SingleLine.Text"
+      usage="input"
+      required="false" />
+
+    <resources>
+      <code path="index.ts" order="1" />
+      <css path="css/QuadrantControl.css" order="1" />
+      <resx path="strings/QuadrantControl.1033.resx" version="1.0.0" />
+    </resources>
+  </control>
+</manifest>

@@ -1,0 +1,4 @@
+Create a PCF control which can be embeded in a Canvas app
+The PCF control should show a 4 quadrant structure and users should be able to add arrows across the quadrants by selecting a starting point and a ending point in quadrtants.
+The user should be able to select the arrows and should be able to drag-drop them or should be able to drag the starting or ending point and the arrows should move.
+The pcf control should be able to accept a json file containing list of arrows and their starting and endng points as well as the control should be able to provide this json as a output when requested.
